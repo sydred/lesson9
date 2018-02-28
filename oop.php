@@ -17,19 +17,23 @@ class Cars
     public $model;
     public $color;
     public $price;
-}
 
+    public function getCar()
+    {
+        echo $this->mark . ' ' . $this->model . ' ' . $this->color . ' ' . $this->price;
+    }
+}
 $carChevrolet = new Car();
 $carChevrolet->mark = 'Chevrolet';
 $carChevrolet->model = 'Comaro';
 $carChevrolet->color = 'yellow';
-$carChevrolet->price = '3000$';
+$carChevrolet->price = '30000';
 
 $carFord = new car();
 $carFord->mark = 'Ford';
 $carFord->model = 'Mustang gt';
 $carFord->color = 'grey';
-$carFord->price = '29500$';
+$carFord->price = '295000';
 
 
 
@@ -41,8 +45,12 @@ class TV
     public $ScreenSize;
     public $display;
     public $resolution;
-}
 
+    public function getTV()
+    {
+        echo $this->mark . ' ' . $this->ScreenSize . ' ' . $this->resolution . ' ' . $this->display;
+    }
+}
 $TvSamsung = new TV();
 $TvSamsung->mark = 'Samsung';
 $TvSamsung->ScreenSize = '40"';
@@ -60,10 +68,14 @@ $TvSony->resolution = '4K ULTRA HD';
 
 class BallpointPen
 {
-    public $mark
-    public $color
-}
+    public $mark;
+    public $color;
 
+    public function getPen()
+    {
+        echo $this->mark . ' ' . $this->color;
+    }
+}
 $PenBenu = new BallpointPen();
 $PenBenu->mark = 'Benu';
 $PenBenu->color = 'black';
@@ -79,8 +91,12 @@ class Duck
 {
     public $breed;
     public $dwelling;
-}
 
+    public function getDuck()
+    {
+        echo $this->breed . ' ' . $this->dwelling;
+    }
+}
 $duckPekin = new Duck();
 $duckPekin->breed = 'Пекинская утка';
 $duckPekin->dwelling = 'Китай';
@@ -97,8 +113,12 @@ class Goods
     public $category;
     public $price;
 
-}
+    public function getGoods()
+    {
+        echo $this->name . ' ' . $this->category . ' ' . $this->price;
+    }
 
+}
 $goodsApple = new Goods();
 $goodsApple->name = 'iPhone';
 $goodsApple->category = 'Телефон';
