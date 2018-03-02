@@ -11,7 +11,7 @@
 
 //машина
 
-class Cars
+class Car
 {
     public $mark;
     public $model;
@@ -29,13 +29,11 @@ $carChevrolet->model = 'Comaro';
 $carChevrolet->color = 'yellow';
 $carChevrolet->price = '30000';
 
-$carFord = new car();
+$carFord = new Car();
 $carFord->mark = 'Ford';
 $carFord->model = 'Mustang gt';
 $carFord->color = 'grey';
 $carFord->price = '295000';
-
-
 
 //телевизор
 
@@ -51,6 +49,7 @@ class TV
         echo $this->mark . ' ' . $this->ScreenSize . ' ' . $this->resolution . ' ' . $this->display;
     }
 }
+
 $TvSamsung = new TV();
 $TvSamsung->mark = 'Samsung';
 $TvSamsung->ScreenSize = '40"';
@@ -76,6 +75,7 @@ class BallpointPen
         echo $this->mark . ' ' . $this->color;
     }
 }
+
 $PenBenu = new BallpointPen();
 $PenBenu->mark = 'Benu';
 $PenBenu->color = 'black';
@@ -83,7 +83,6 @@ $PenBenu->color = 'black';
 $PenEtra = new BallpointPen();
 $PenEtra->mark = 'Etra';
 $PenEtra->color = 'blue';
-
 
 //утка
 
@@ -97,6 +96,7 @@ class Duck
         echo $this->breed . ' ' . $this->dwelling;
     }
 }
+
 $duckPekin = new Duck();
 $duckPekin->breed = 'Пекинская утка';
 $duckPekin->dwelling = 'Китай';
@@ -119,6 +119,7 @@ class Goods
     }
 
 }
+
 $goodsApple = new Goods();
 $goodsApple->name = 'iPhone';
 $goodsApple->category = 'Телефон';
